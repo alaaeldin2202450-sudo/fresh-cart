@@ -1,0 +1,78 @@
+/* css/checkout.css */
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.checkout-form-container {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+}
+
+.checkout-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.checkout-summary {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 100px;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.payment-method {
+    flex: 1;
+    min-width: 120px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.payment-method:hover {
+    border-color: var(--primary);
+}
+
+.payment-method input[type="radio"] {
+    display: none;
+}
+
+.payment-method input[type="radio"]:checked + .method-content {
+    color: var(--primary);
+}
+
+/* Add border when radio is checked inside label */
+.payment-method:has(input[type="radio"]:checked) {
+    border-color: var(--primary);
+    background-color: rgba(46, 204, 113, 0.05);
+}
+
+.method-content i {
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+}
