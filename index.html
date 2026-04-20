@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - Online Grocery Store</title>
+    <meta name="description" content="Shop fresh organic groceries online. Best quality fruits, vegetables, dairy, and more.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i> Fresh<span>Cart</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="pages/shop.html">Shop</a>
+                <a href="pages/contact.html">Contact</a>
+                <a href="pages/login.html">Login</a>
+            </div>
+
+            <div class="nav-icons">
+                <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+                <a href="pages/cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Fresh & Organic Groceries <span>Delivered</span></h1>
+                    <p>Shop for the freshest fruits, vegetables, dairy, and more. Delivered right to your doorstep within hours.</p>
+                    <a href="pages/shop.html" class="btn btn-primary" style="font-size: 18px; padding: 12px 32px;">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Browse Categories</h2>
+                <p>Find what you're looking for easily</p>
+            </div>
+            <div class="categories-grid">
+                <a href="pages/shop.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-apple-alt"></i></div>
+                    <h3>Fruits</h3>
+                </a>
+                <a href="pages/shop.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-carrot"></i></div>
+                    <h3>Vegetables</h3>
+                </a>
+                <a href="pages/shop.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-cheese"></i></div>
+                    <h3>Dairy</h3>
+                </a>
+                <a href="pages/shop.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-bread-slice"></i></div>
+                    <h3>Bakery</h3>
+                </a>
+                <a href="pages/shop.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-glass-water"></i></div>
+                    <h3>Beverages</h3>
+                </a>
+                <a href="pages/shop.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-cookie"></i></div>
+                    <h3>Snacks</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Hand-picked fresh items for you</p>
+            </div>
+            <div id="featured-products" class="product-grid">
+                <!-- Products will be injected here via JS -->
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="pages/shop.html" class="btn btn-outline">View All Products</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-leaf" style="color: var(--primary);"></i> FreshCart</h3>
+                    <p style="color: var(--gray); margin-bottom: 16px;">The best online grocery store for fresh organic products.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/shop.html">Shop</a></li>
+                        <li><a href="pages/cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Help & Info</h3>
+                    <ul>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="color: var(--gray);"><i class="fas fa-map-marker-alt"></i> 123 Grocery St, NY</li>
+                        <li style="color: var(--gray);"><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li style="color: var(--gray);"><i class="fas fa-envelope"></i> hello@freshcart.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FreshCart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
